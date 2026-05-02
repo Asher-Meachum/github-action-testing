@@ -1,4 +1,4 @@
-+++  
++++
 title = "Zola: an excellent tool with a maturing ecosystem"  
 date = 2026-04-27  
 +++
