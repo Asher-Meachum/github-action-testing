@@ -1,0 +1,60 @@
+$light_green: #97ffbb
+$light_grey: #dddddd
+$dark_grey: #bbbbbb
+
+@mixin text($size: 100%)
+    font: $size "Times New Roman", serif
+    color: #000
+
+@mixin link()
+    a
+        color: inherit
+        text-decoration: inherit
+
+body
+    @include text
+    background-color: $light_grey
+
+    min-height: 100vh
+    display: grid
+    grid-template-rows: 50px 1fr auto
+    margin: 0
+
+header
+    @include link
+    background-color: $light_green
+
+    border-bottom: 2px solid green
+    border-radius: 5px
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+footer
+    @include text(80%)
+    @include link
+
+    text-align: center
+    background-color: $dark_grey
+
+nav
+    align-self: center
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.nav-item
+    width: calc(50% - 2em)
+    margin: 1em
+
+.container
+    margin-left: 10%
+    margin-right: 10%
+
+.home
+    margin-left: 7px
+    text-overflow: ellipses
+    overflow: hidden
+    white-space: nowrap

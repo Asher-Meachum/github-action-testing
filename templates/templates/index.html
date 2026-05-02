@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_title %}Home @ Asher Bernstein-Meachum{% endblock page_title %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ get_url(path='index.css') }}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+<h1 class="title">
+  Hail and Well Met...
+</h1>
+<div class="text">
+  <p>Hello, and welcome. I am Asher Bernstein-Meachum, a developer and musician. To see my work, click <a href="{{ get_url(path='@/projects/_index.md') }}">here</a>.</p>
+  <p>To read my blog, go <a href="{{ get_url(path='@/real_blog/_index.md') }}">here</a>.</p>
+  <p>You can learn a little more about me <a href="{{ get_url(path='@/info/about.md') }}">here</a>.</p>
+</div>
+{% endblock content %}

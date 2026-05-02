@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}<link rel="stylesheet" href="{{ get_url(path='blog-page.css') }}">{% endblock stylesheet %}
+
+{% block page_title %}
+Blog - {{ page.title }}
+{% endblock page_title %}
+
+{% block content %}
+<div class="meta">
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="subtitle"><strong>{{ page.date }}</strong></p>
+</div>
+
+<!-- Gets md content -->
+<div class="content">
+  {{ page.content | safe }}
+</div>
+  {% endblock content %}
