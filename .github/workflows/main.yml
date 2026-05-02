@@ -2,7 +2,7 @@ name: Build and deploy Zola website
 on:
   push:
     branches:
-      - zola-deploy-to-gh-pages
+      - zola-deploy-gh-pages
 
 permissions:
   contents: read
